@@ -1,10 +1,13 @@
 A simple implementation of a auto-scaling cloud computing cluster using the python Dask framework
 
+### Conceptual Architecture
+
 There are three parts to the system:
 1. A Scheduler which partition works and assigns it to worker nodes
 2. Worker Nodes which expose a HTTP endpoint and listen idly, and starts up if the scheduler requests
 3. Any task runners which connect to the scheduler to run their python code on the cluster.
 
+### Starting a Cluster
 
 To initialise this program, you will need one or more computers: 
 1. One of them will run the scheduler, 
