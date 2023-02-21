@@ -6,8 +6,8 @@ There are three parts to the system:
 3. Any task runners which connect to the scheduler to run their python code on the cluster.
 
 
-To initialise this program, you will need one or more computers: \
-1. One of them will run the scheduler, \
+To initialise this program, you will need one or more computers: 
+1. One of them will run the scheduler, 
 2. The others will run the workers (the machine running the worker can run the scheduler concurrently) 
 
 This will provide you with a computing cluster, which you can send tasks to via the Python SDK for Dask. An example is provided in the run_task.py file
