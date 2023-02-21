@@ -7,6 +7,14 @@ There are three parts to the system:
 2. Worker Nodes which expose a HTTP endpoint and listen idly, and starts up if the scheduler requests
 3. Any task runners which connect to the scheduler to run their python code on the cluster.
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ### Starting a Cluster
 
 To initialise this program, you will need one or more computers: 
