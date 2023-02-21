@@ -16,8 +16,8 @@ To start, on all machines:
 1. clone the repo via `git clone`
 2. Install the dependencies for this project via either `pip install -r requirements.txt` or `poetry install`
 
-On a worker machine: \
-1. Run poetry run `flask --app worker run` or `poetry run flask --app worker run` \
+On a worker machine: 
+1. Run poetry run `flask --app worker run` or `poetry run flask --app worker run` 
 2. Take note of the ip address and port that the flask server is running on, and add it to the workers.toml file of the machine running the scheduler
 e.g. addresses = ["http://127.0.0.1:5000"]
 
