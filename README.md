@@ -17,7 +17,7 @@ flowchart TD
     C -->|Subtask| G[fa:fa-computer Worker Node]
 ```
 
-The scheduler begins with zero or more worker nodes already instantiated. \
+The scheduler begins with zero or more worker nodes already instantiated. 
 
 Uninstantiated worker nodes do not provide their computational power to the cluster. They are standby nodes that can be called on if the cluster needs to scale up. Each uninstantiated worker uses Flask to expose a HTTP endpoint, which the scheduler will ping if it requires the worker to spin up.
 
