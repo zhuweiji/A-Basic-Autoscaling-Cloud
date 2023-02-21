@@ -8,11 +8,12 @@ There are three parts to the system:
 3. Any task runners which connect to the scheduler to run their python code on the cluster.
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD
+    A[Task Runner] -->|New Computation| C{Scheduler}
+    C -->|Subtask| D[fa:fa-computer Worker Node]
+    C -->|Subtask| E[fa:fa-computer Worker Node]
+    C -->|Subtask| F[fa:fa-computer Worker Node]
+    C -->|Subtask| G[fa:fa-computer Worker Node]
 ```
 
 ### Starting a Cluster
