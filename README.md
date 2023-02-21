@@ -10,7 +10,7 @@ There are three parts to the system:
 ```mermaid
 flowchart TD
     A[Task Runner] -->|New Computation| C{Scheduler}
-    E[Task Runner] -->|New Computation| C
+    Z[Task Runner] -->|New Computation| C
     C -->|Subtask| D[fa:fa-computer Worker Node]
     C -->|Subtask| E[fa:fa-computer Worker Node]
     C -->|Subtask| F[fa:fa-computer Worker Node]
