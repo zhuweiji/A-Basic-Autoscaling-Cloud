@@ -25,7 +25,7 @@ On a worker machine:
 e.g. addresses = ["http://127.0.0.1:5000"]
 
 On the scheduler machine: \
-5. Run `python3 run scheduler.py` or `poetry run python3 scheduler.py`
+1. Run `python3 run scheduler.py` or `poetry run python3 scheduler.py`
 
 The cluster has been created!
 
